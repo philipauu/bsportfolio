@@ -22,9 +22,9 @@
   .col-sm-4 {
     text-align: center;
     margin: 25px 0; } }
-.services.glyphicon {
+.services .glyphicon {
   color: #f4511e;
-  font-size: 200px; }
+  font-size: 30px; }
 
 .thumbnail {
   padding: 0 0 15px;
