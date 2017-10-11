@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/javascript.js"></script>
 
 </head>
 
@@ -261,29 +262,11 @@
     </div>
 
 
-    <!-- Add Google Maps -->
-    <div id="googleMap" style="height:400px;width:100%;"></div>
-    <script>
-      function myMap() {
-        var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-        var mapProp = {
-          center: myCenter,
-          zoom: 12,
-          scrollwheel: false,
-          draggable: false,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-        var marker = new google.maps.Marker({
-          position: myCenter
-        });
-        marker.setMap(map);
-      }
-
-//AIzaSyBQE9ebWD4qyXwH9G_D0A2aMAGl6koQA8k
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQE9ebWD4qyXwH9G_D0A2aMAGl6koQA8k&callback=initMap">
+    </script>
 
 
-      </body>
+</body>
 
-      </html>
+</html>
