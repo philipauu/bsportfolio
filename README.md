@@ -1,1 +1,1 @@
-new repo for bsportfolio
+new repo for bscompany
