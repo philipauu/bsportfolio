@@ -1,5 +1,5 @@
 <?php
 
-$username = 'phil';
+$username = $_POST['name'];
 
-echo 'it works!!!';
+echo "user is called $username";
